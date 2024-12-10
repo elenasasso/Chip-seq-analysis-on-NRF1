@@ -69,7 +69,7 @@ awk 'BEGIN {OFS="\t"} {print $1, $2 + $10, $2 + $10 + 1, $4, $9}' intersection_r
 bedtools intersect -a merged_no_blacklisted_peaks.summit.bed -b K562_ChromHMM_15states.bed -wa -wb > chromatin_states_summit_merged_noBlacklisted.txt
 
 # Step 9: GREAT Analysis
-# Perform analysis on promoters and enhancers using the provided Python script
+# Perform analysis on promoters and enhancers using the provided Python script great.py
 # Please follow the script in the Python section for counting promoters and enhancers from the GREAT table
 
 # Step 10: Visualization 1
